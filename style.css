@@ -17,7 +17,7 @@ a {
     margin-bottom: 100px;
     gap: 8;
 }
-.hero-wrapper {
+.hero-wrapper, .footer {
     background: #1F2937;
 }
 .random-wrapper {
@@ -78,7 +78,7 @@ a {
     font-style: italic;
     font-weight: bolder;
 }
-.hero {
+.hero, .footer {
     display: flex;    
 }
 .hero-left{
@@ -94,7 +94,7 @@ a {
     margin-top: 0;
     padding-top: 0;
 }
-.hero p, .header a, .hero-left a{
+.hero p, .header a, .hero-left a, .footer{
     font-size: 18px;
     color: #e5e7eb;
 }
@@ -169,4 +169,11 @@ button {
     width: 36px;
     height: 36px;
     margin-right: 5px;
+    flex-shrink: 0;
+}
+.footer {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
 }
